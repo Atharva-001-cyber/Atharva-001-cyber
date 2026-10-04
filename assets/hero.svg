@@ -1,33 +1,117 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#050816"/>
-    <stop offset="0.55" stop-color="#0B1026"/>
-    <stop offset="1" stop-color="#160B2D"/>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#030711"/>
+    <stop offset="0.55" stop-color="#07111b"/>
+    <stop offset="1" stop-color="#160b24"/>
   </linearGradient>
-  <linearGradient id="accent" x1="120" y1="60" x2="1080" y2="300" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#22D3EE"/>
-    <stop offset="0.5" stop-color="#818CF8"/>
-    <stop offset="1" stop-color="#C084FC"/>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#07101a"/>
+    <stop offset="1" stop-color="#111827"/>
   </linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-    <path d="M42 0H0V42" stroke="#FFFFFF" stroke-opacity=".055"/>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#13a8ff"/>
+    <stop offset="1" stop-color="#7c5cff"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="shadow"><feGaussianBlur stdDeviation="14"/></filter>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M28 0H0V28" fill="none" stroke="#7aa2c9" stroke-opacity=".07"/>
   </pattern>
 </defs>
-<rect width="1200" height="360" rx="28" fill="url(#bg)"/>
-<rect width="1200" height="360" rx="28" fill="url(#grid)"/>
-<circle cx="1000" cy="90" r="150" fill="#7C3AED" fill-opacity=".12" filter="url(#glow)"/>
-<circle cx="180" cy="300" r="130" fill="#06B6D4" fill-opacity=".10" filter="url(#glow)"/>
-<path d="M-40 290C180 185 270 345 475 240C670 140 770 275 1240 80" stroke="url(#accent)" stroke-opacity=".55" stroke-width="2"/>
-<path d="M-20 315C210 205 285 365 500 255C700 150 820 285 1220 105" stroke="url(#accent)" stroke-opacity=".18" stroke-width="8" filter="url(#glow)"/>
-<g fill="#fff">
-  <circle cx="85" cy="72" r="2"/><circle cx="145" cy="125" r="1.5"/><circle cx="1080" cy="205" r="2"/>
-  <circle cx="1130" cy="70" r="1.5"/><circle cx="900" cy="55" r="1.5"/><circle cx="310" cy="70" r="1.5"/>
+
+<rect width="1200" height="430" rx="20" fill="url(#bg)"/>
+<rect width="1200" height="430" rx="20" fill="url(#grid)"/>
+
+<!-- atmospheric light -->
+<ellipse cx="1010" cy="110" rx="190" ry="150" fill="#713cff" opacity=".10" filter="url(#glow)"/>
+<ellipse cx="720" cy="350" rx="300" ry="90" fill="#00a8ff" opacity=".07" filter="url(#glow)"/>
+
+<!-- left copy -->
+<text x="58" y="70" fill="#e8f1ff" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="2">HI THERE! 👋</text>
+<text x="58" y="128" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Atharva</text>
+<text x="58" y="180" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Ranjan <tspan fill="#79b9ff">Soni</tspan></text>
+<text x="60" y="213" fill="#d8e7f8" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">JAVA DEVELOPER  |  DSA ENTHUSIAST  |  BUILDING REAL SOLUTIONS</text>
+<text x="60" y="246" fill="#d0dae8" font-family="Arial, Helvetica, sans-serif" font-size="15">I love turning ideas into practical software, solving</text>
+<text x="60" y="269" fill="#d0dae8" font-family="Arial, Helvetica, sans-serif" font-size="15">real-world problems and continuously learning.</text>
+
+<!-- buttons -->
+<rect x="60" y="294" width="145" height="42" rx="7" fill="#0b8df0"/>
+<text x="79" y="320" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Let's Connect</text>
+<text x="183" y="320" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18">→</text>
+
+<rect x="216" y="294" width="143" height="42" rx="7" fill="#07111c" stroke="#52677e"/>
+<circle cx="240" cy="315" r="9" fill="#fff"/>
+<text x="236" y="319" fill="#07111c" font-family="Arial" font-size="11" font-weight="700">●</text>
+<text x="255" y="320" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13">View My Work</text>
+
+<!-- desk shadow -->
+<ellipse cx="870" cy="363" rx="290" ry="28" fill="#000" opacity=".65" filter="url(#shadow)"/>
+
+<!-- back monitor -->
+<rect x="875" y="78" width="242" height="145" rx="8" fill="#111a24" stroke="#37485b" stroke-width="3"/>
+<rect x="886" y="89" width="220" height="122" rx="3" fill="url(#screen)"/>
+<circle cx="900" cy="101" r="3" fill="#ff5f57"/>
+<circle cx="911" cy="101" r="3" fill="#ffbd2e"/>
+<circle cx="922" cy="101" r="3" fill="#28c840"/>
+<g font-family="monospace" font-size="9">
+<text x="900" y="120" fill="#62d9ff">public class Main {</text>
+<text x="910" y="135" fill="#b995ff"> public static void main</text>
+<text x="910" y="150" fill="#e8f1ff"> (String[] args) {</text>
+<text x="920" y="165" fill="#70e39a"> System.out.println</text>
+<text x="920" y="180" fill="#ffd66b"> ("build();");</text>
+<text x="910" y="195" fill="#e8f1ff"> }</text>
+<text x="900" y="207" fill="#62d9ff">}</text>
 </g>
-<text x="600" y="132" text-anchor="middle" fill="#E5E7EB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" letter-spacing="7">ATHARVA RANJAN SONI</text>
-<text x="600" y="190" text-anchor="middle" fill="white" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="56" font-weight="800" letter-spacing="2">H A R R Y</text>
-<text x="600" y="230" text-anchor="middle" fill="#A5B4FC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="2">JAVA DEVELOPER  •  DSA ENTHUSIAST  •  BUILDER</text>
-<rect x="430" y="258" width="340" height="2" rx="1" fill="url(#accent)"/>
-<text x="600" y="292" text-anchor="middle" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">LEARN  •  SOLVE  •  BUILD  •  SHIP</text>
+<path d="M980 223v22M960 245h40" stroke="#4c5e70" stroke-width="5"/>
+
+<!-- desk -->
+<path d="M650 325 L1135 325 L1180 385 L620 385 Z" fill="#171b20" stroke="#3d434b" stroke-width="2"/>
+<path d="M640 385H1170" stroke="#090b0f" stroke-width="12"/>
+
+<!-- lamp -->
+<path d="M1030 210 Q1050 175 1080 155" fill="none" stroke="#aab2ba" stroke-width="8"/>
+<path d="M1027 210 Q1007 220 990 230" fill="none" stroke="#aab2ba" stroke-width="6"/>
+<path d="M985 229 L1020 229 L1032 246 L974 246 Z" fill="#f3b45d"/>
+<ellipse cx="1002" cy="246" rx="48" ry="17" fill="#f3b45d" opacity=".16" filter="url(#glow)"/>
+
+<!-- plant -->
+<rect x="748" y="246" width="54" height="60" rx="9" fill="#9b633d"/>
+<path d="M774 247 C745 215 760 185 780 228 C775 190 805 180 796 230 C817 204 832 222 802 250" fill="#3f8f58"/>
+<path d="M777 250 C755 222 752 205 770 235M789 247C803 220 809 206 801 237" stroke="#78bd77" stroke-width="3" fill="none"/>
+
+<!-- foreground laptop -->
+<path d="M700 170 Q703 158 716 158 H1000 Q1013 158 1015 171 L1015 322 H700 Z" fill="#0b1118" stroke="#526271" stroke-width="3"/>
+<rect x="718" y="177" width="279" height="127" rx="3" fill="url(#screen)"/>
+<circle cx="858" cy="167" r="3" fill="#53687b"/>
+<g font-family="monospace" font-size="9">
+<text x="730" y="194" fill="#6be2ff">import java.util.*;</text>
+<text x="730" y="209" fill="#d7a5ff">class Developer {</text>
+<text x="742" y="224" fill="#fff">void build() {</text>
+<text x="754" y="239" fill="#7fe7a2"> solveProblems();</text>
+<text x="754" y="254" fill="#ffcf67"> learnJava();</text>
+<text x="754" y="269" fill="#6be2ff"> shipProjects();</text>
+<text x="742" y="284" fill="#fff">}</text>
+<text x="730" y="298" fill="#d7a5ff">}</text>
+</g>
+<path d="M676 322 Q700 330 718 330 H1008 Q1028 330 1047 322 L1080 355 Q1087 365 1071 367 H650 Q636 365 643 355 Z" fill="#242c35" stroke="#4c5965" stroke-width="2"/>
+<rect x="810" y="338" width="112" height="12" rx="5" fill="#11171e" stroke="#485565"/>
+
+<!-- notebook and mug -->
+<rect x="1060" y="275" width="82" height="55" rx="4" fill="#eee9dc" transform="rotate(-5 1060 275)"/>
+<text x="1070" y="297" fill="#222" font-family="Arial" font-size="9" transform="rotate(-5 1060 275)">CODE</text>
+<text x="1070" y="311" fill="#222" font-family="Arial" font-size="9" transform="rotate(-5 1060 275)">LEARN</text>
+<text x="1070" y="325" fill="#222" font-family="Arial" font-size="9" transform="rotate(-5 1060 275)">BUILD</text>
+
+<path d="M1080 305h55v45q0 13-13 13h-29q-13 0-13-13z" fill="#17212b" stroke="#596b7d" stroke-width="2"/>
+<path d="M1135 318q28-3 22 18q-3 13-22 10" fill="none" stroke="#596b7d" stroke-width="5"/>
+<text x="1088" y="325" fill="#dbe8f4" font-family="Arial" font-size="8">CODE</text>
+<text x="1088" y="337" fill="#dbe8f4" font-family="Arial" font-size="8">LEARN</text>
+<text x="1088" y="349" fill="#dbe8f4" font-family="Arial" font-size="8">BUILD</text>
+
+<!-- bottom accent -->
+<rect x="58" y="380" width="300" height="2" fill="url(#blue)"/>
+<text x="378" y="386" fill="#8ba2b9" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3">CODE • LEARN • SOLVE • BUILD</text>
+<rect x="650" y="380" width="450" height="2" fill="url(#blue)" opacity=".75"/>
+
 </svg>
