@@ -11,7 +11,7 @@
 
 ---
 
-## 👋 About Me
+## 👋 Hey, I'm Atharva
 
 > **B.Tech 3rd Year · Java Developer in Progress · DSA Enthusiast**
 
