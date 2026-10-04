@@ -1,41 +1,25 @@
 <div align="center">
-  <img src="assets/header.svg" width="100%" alt="Atharva Ranjan Soni Header" />
+  <!-- Panel 1: Header Cover & Coding Platforms -->
+  <img src="assets/panel1_header.svg" width="100%" alt="Atharva Ranjan Soni Header & Platforms" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="assets/platforms.svg" width="100%" alt="Coding Platforms" />
+  <!-- Panel 2: Tech Stack Icons & Featured Projects -->
+  <img src="assets/panel2_skills_projects.svg" width="100%" alt="Tech Stack Icons & Featured Projects" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="assets/about.svg" width="100%" alt="About Me" />
+  <!-- Panel 3: DSA Journey Topic Matrix -->
+  <img src="assets/panel3_dsa_matrix.svg" width="100%" alt="DSA Progress Matrix" />
 </div>
 
 <br />
 
-<div align="center">
-  <img src="assets/techstack.svg" width="100%" alt="Tech Stack" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="assets/projects.svg" width="100%" alt="Featured Projects" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="assets/dsa.svg" width="100%" alt="DSA Matrix" />
-</div>
-
-<br />
-
-<h2 align="center">📈 Live GitHub Activity &amp; Stats</h2>
-
+<!-- Live GitHub Stats Row -->
 <div align="center">
   <a href="https://github.com/Atharva-001-cyber">
     <img src="https://github-readme-stats.vercel.app/api?username=Atharva-001-cyber&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" alt="GitHub Stats" />
@@ -48,23 +32,8 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/Atharva-001-cyber">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Atharva-001-cyber&layout=compact&theme=tokyonight&hide_border=true" width="60%" alt="Top Languages" />
-  </a>
-</div>
-
-<br />
-
-<h2 align="center">🌐 Let's Connect</h2>
-
-<div align="center">
+  <!-- Panel 4: Social Connect Buttons & Tagline Footer -->
   <a href="https://www.linkedin.com/in/atharva-ranjan-soni-451417302/">
-    <img src="assets/socials.svg" width="100%" alt="Social Links" />
+    <img src="assets/panel4_socials_footer.svg" width="100%" alt="Social Connect Buttons" />
   </a>
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00F0FF&height=120&section=footer&text=CODE%20%E2%80%A2%20LEARN%20%E2%80%A2%20SOLVE%20%E2%80%A2%20BUILD&fontSize=18&fontColor=ffffff&animation=twinkling" width="100%" />
 </div>

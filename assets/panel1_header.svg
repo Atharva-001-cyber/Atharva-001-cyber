@@ -1,0 +1,95 @@
+<svg fill="none" width="1000" height="230" viewBox="0 0 1000 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#070a14"/>
+      <stop offset="100%" stop-color="#05070e"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d1322" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00f0ff" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Dark Background Canvas -->
+  <rect width="1000" height="230" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Cyber Grid overlay -->
+  <path d="M0 45H1000 M0 115H1000 M0 185H1000" stroke="#1e293b" stroke-opacity="0.3" stroke-dasharray="4 4"/>
+  <path d="M200 0V230 M400 0V230 M600 0V230 M800 0V230" stroke="#1e293b" stroke-opacity="0.3" stroke-dasharray="4 4"/>
+
+  <!-- 3D Java Cyber Shield Graphic -->
+  <g transform="translate(35, 25)">
+    <circle cx="75" cy="75" r="65" fill="#0f172a" stroke="#00f0ff" stroke-width="2" filter="url(#glow)"/>
+    <circle cx="75" cy="75" r="56" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="6 4"/>
+    
+    <!-- Java Coffee Cup -->
+    <path d="M58 105 C 58 113, 92 113, 92 105 L 96 70 C 96 58, 54 58, 54 70 Z" fill="#ff9900" filter="url(#glow)"/>
+    <path d="M96 75 C 108 75, 108 92, 96 92" stroke="#ff9900" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M62 50 C 66 40, 58 32, 64 24" stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M75 48 C 79 36, 71 28, 77 20" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M88 50 C 92 40, 84 32, 90 24" stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Title & Tagline -->
+  <g transform="translate(200, 30)">
+    <rect width="180" height="24" rx="12" fill="#0f172a" stroke="#00f0ff" stroke-width="1"/>
+    <text x="90" y="16" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="11" font-weight="700" text-anchor="middle">⚡ WELCOME TO MY REPO</text>
+
+    <text x="0" y="62" fill="url(#titleGrad)" font-family="'Inter', sans-serif" font-size="36" font-weight="900" filter="url(#glow)">Atharva Ranjan Soni</text>
+    
+    <text x="0" y="92" fill="#e2e8f0" font-family="'Fira Code', monospace" font-size="14" font-weight="600">
+      <tspan fill="#ff9900">JAVA DEVELOPER</tspan><tspan fill="#475569"> | </tspan>
+      <tspan fill="#00f0ff">DSA ENTHUSIAST</tspan><tspan fill="#475569"> | </tspan>
+      <tspan fill="#ec4899">BUILDING REAL SOLUTIONS</tspan>
+    </text>
+
+    <!-- SRMCEM & Bio Badge -->
+    <rect x="0" y="110" width="410" height="30" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="12" y="130" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="500">
+      🎓 <tspan fill="#f8fafc" font-weight="600">B.Tech 3rd Year</tspan> @ Shri Ramswaroop Memorial College (SRMCEM)
+    </text>
+  </g>
+
+  <!-- Platform Cards Grid (Right Side) -->
+  <g transform="translate(680, 25)">
+    <!-- GitHub -->
+    <g transform="translate(0, 0)">
+      <rect width="285" height="38" rx="8" fill="#1e293b" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="15" y="24" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="12" font-weight="700">🐱 GitHub:</text>
+      <text x="270" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="600" text-anchor="end">Atharva-001-cyber</text>
+    </g>
+
+    <!-- LeetCode -->
+    <g transform="translate(0, 44)">
+      <rect width="285" height="38" rx="8" fill="#1e293b" stroke="#ff9900" stroke-width="1.2"/>
+      <text x="15" y="24" fill="#ff9900" font-family="'Fira Code', monospace" font-size="12" font-weight="700">🧩 LeetCode:</text>
+      <text x="270" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="600" text-anchor="end">Atharva_Soni-20</text>
+    </g>
+
+    <!-- CodeChef -->
+    <g transform="translate(0, 88)">
+      <rect width="285" height="38" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+      <text x="15" y="24" fill="#10b981" font-family="'Fira Code', monospace" font-size="12" font-weight="700">👨‍🍳 CodeChef:</text>
+      <text x="270" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="600" text-anchor="end">span_fish_77</text>
+    </g>
+
+    <!-- Codolio -->
+    <g transform="translate(0, 132)">
+      <rect width="285" height="38" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.2"/>
+      <text x="15" y="24" fill="#a855f7" font-family="'Fira Code', monospace" font-size="12" font-weight="700">⚡ Codolio:</text>
+      <text x="270" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="600" text-anchor="end">atharva@123</text>
+    </g>
+  </g>
+
+  <!-- Bottom Line -->
+  <line x1="35" y1="205" x2="965" y2="205" stroke="#1e293b" stroke-width="1"/>
+</svg>

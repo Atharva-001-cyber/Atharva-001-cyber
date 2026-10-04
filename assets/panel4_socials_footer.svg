@@ -1,0 +1,57 @@
+<svg fill="none" width="1000" height="90" viewBox="0 0 1000 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#070a14"/>
+      <stop offset="100%" stop-color="#05070e"/>
+    </linearGradient>
+    <filter id="glowBlue"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0a66c2" flood-opacity="0.4"/></filter>
+    <filter id="glowPink"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#e4405f" flood-opacity="0.4"/></filter>
+    <filter id="glowWhite"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#ffffff" flood-opacity="0.3"/></filter>
+    <filter id="glowRed"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#ea4335" flood-opacity="0.4"/></filter>
+  </defs>
+
+  <rect width="1000" height="90" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Social Buttons Group (Left) -->
+  <g transform="translate(25, 20)">
+    <!-- LinkedIn -->
+    <g transform="translate(0, 0)" filter="url(#glowBlue)">
+      <rect width="150" height="48" rx="10" fill="#1e293b" stroke="#0a66c2" stroke-width="1.2"/>
+      <circle cx="25" cy="24" r="12" fill="#0a66c2"/>
+      <text x="25" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="900" text-anchor="middle">in</text>
+      <text x="45" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">LinkedIn</text>
+      <text x="45" y="36" fill="#0a66c2" font-family="'Fira Code', monospace" font-size="9" font-weight="600">Atharva</text>
+    </g>
+
+    <!-- Instagram -->
+    <g transform="translate(160, 0)" filter="url(#glowPink)">
+      <rect width="150" height="48" rx="10" fill="#1e293b" stroke="#e4405f" stroke-width="1.2"/>
+      <text x="22" y="28" fill="#e4405f" font-family="'Inter', sans-serif" font-size="14">📸</text>
+      <text x="42" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Instagram</text>
+      <text x="42" y="36" fill="#e4405f" font-family="'Fira Code', monospace" font-size="9" font-weight="600">@_.atharva__1</text>
+    </g>
+
+    <!-- X / Twitter -->
+    <g transform="translate(320, 0)" filter="url(#glowWhite)">
+      <rect width="150" height="48" rx="10" fill="#1e293b" stroke="#ffffff" stroke-width="1.2"/>
+      <text x="22" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14">𝕏</text>
+      <text x="42" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">X / Twitter</text>
+      <text x="42" y="36" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="9" font-weight="600">@AtharvRanj52745</text>
+    </g>
+
+    <!-- Email -->
+    <g transform="translate(480, 0)" filter="url(#glowRed)">
+      <rect width="180" height="48" rx="10" fill="#1e293b" stroke="#ea4335" stroke-width="1.2"/>
+      <text x="22" y="28" fill="#ea4335" font-family="'Inter', sans-serif" font-size="14">✉️</text>
+      <text x="42" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Email</text>
+      <text x="42" y="36" fill="#ea4335" font-family="'Fira Code', monospace" font-size="8" font-weight="600">atharavranjans65</text>
+    </g>
+  </g>
+
+  <!-- Tagline Banner (Right) -->
+  <g transform="translate(685, 20)">
+    <rect width="290" height="48" rx="10" fill="#0f172a" stroke="#00f0ff" stroke-width="1.2"/>
+    <text x="145" y="28" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="12" font-weight="700" text-anchor="middle">CODE • LEARN • SOLVE • BUILD</text>
+  </g>
+</svg>

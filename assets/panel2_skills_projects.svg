@@ -1,0 +1,128 @@
+<svg fill="none" width="1000" height="270" viewBox="0 0 1000 270" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#070a14"/>
+      <stop offset="100%" stop-color="#05070e"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d1322" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00f0ff" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="1000" height="270" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Left Side: Tech Stack & Tools -->
+  <g transform="translate(30, 20)">
+    <text x="0" y="20" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="16" font-weight="700">⚙️ Tech Stack &amp; Tools</text>
+    <line x1="0" y1="30" x2="440" y2="30" stroke="#334155" stroke-width="1"/>
+
+    <!-- Row 1: Languages -->
+    <text x="0" y="52" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="11" font-weight="600">LANGUAGES &amp; DB</text>
+    <g transform="translate(0, 62)">
+      <!-- Java -->
+      <rect width="95" height="36" rx="8" fill="#1e293b" stroke="#ff9900" stroke-width="1.2"/>
+      <path d="M16 26 C16 30 28 30 28 26 L30 14 C30 10 14 10 14 14 Z" fill="#ff9900"/>
+      <text x="36" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">Java</text>
+
+      <!-- Python -->
+      <rect x="105" width="100" height="36" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+      <path d="M118 14 C118 10 128 10 128 14 L128 20 L122 20 Z" fill="#38bdf8"/>
+      <path d="M128 26 C128 30 118 30 118 26 L118 20 L124 20 Z" fill="#facc15"/>
+      <text x="135" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">Python</text>
+
+      <!-- JavaScript -->
+      <rect x="215" width="115" height="36" rx="8" fill="#1e293b" stroke="#facc15" stroke-width="1.2"/>
+      <rect x="223" y="10" width="16" height="16" rx="3" fill="#facc15"/>
+      <text x="227" y="22" fill="#000000" font-family="'Inter', sans-serif" font-size="10" font-weight="900">JS</text>
+      <text x="245" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">JavaScript</text>
+
+      <!-- MySQL -->
+      <rect x="340" width="95" height="36" rx="8" fill="#1e293b" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="350" y="23" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="14">🐬</text>
+      <text x="368" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">MySQL</text>
+    </g>
+
+    <!-- Row 2: Frontend & Tools -->
+    <text x="0" y="122" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="11" font-weight="600">FRONTEND &amp; TOOLS</text>
+    <g transform="translate(0, 132)">
+      <!-- HTML5 -->
+      <rect width="80" height="34" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="1"/>
+      <text x="10" y="22" fill="#f97316" font-family="'Inter', sans-serif" font-size="12">🌐</text>
+      <text x="26" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">HTML5</text>
+
+      <!-- CSS3 -->
+      <rect x="88" width="75" height="34" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+      <text x="96" y="22" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="12">🎨</text>
+      <text x="112" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">CSS3</text>
+
+      <!-- Git -->
+      <rect x="171" width="60" height="34" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1"/>
+      <text x="179" y="22" fill="#ef4444" font-family="'Inter', sans-serif" font-size="12">🌿</text>
+      <text x="195" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Git</text>
+
+      <!-- VS Code -->
+      <rect x="239" width="90" height="34" rx="8" fill="#1e293b" stroke="#0284c7" stroke-width="1"/>
+      <text x="247" y="22" fill="#0284c7" font-family="'Inter', sans-serif" font-size="12">💻</text>
+      <text x="263" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">VSCode</text>
+
+      <!-- Figma -->
+      <rect x="337" width="75" height="34" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+      <text x="345" y="22" fill="#a855f7" font-family="'Inter', sans-serif" font-size="12">🎨</text>
+      <text x="361" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Figma</text>
+    </g>
+
+    <!-- Row 3: Jira & GitHub -->
+    <g transform="translate(0, 176)">
+      <rect width="70" height="32" rx="8" fill="#1e293b" stroke="#2563eb" stroke-width="1"/>
+      <text x="8" y="21" fill="#2563eb" font-family="'Inter', sans-serif" font-size="12">📐</text>
+      <text x="24" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Jira</text>
+
+      <rect x="78" width="90" height="32" rx="8" fill="#1e293b" stroke="#f8fafc" stroke-width="1"/>
+      <text x="86" y="21" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12">🐱</text>
+      <text x="102" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">GitHub</text>
+    </g>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="500" y1="20" x2="500" y2="250" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Right Side: Featured Projects -->
+  <g transform="translate(525, 20)">
+    <text x="0" y="20" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="16" font-weight="700">🚀 Featured Projects</text>
+    <line x1="0" y1="30" x2="445" y2="30" stroke="#334155" stroke-width="1"/>
+
+    <!-- Project 1: Kabadiwala Connect -->
+    <g transform="translate(0, 42)">
+      <rect width="445" height="95" rx="10" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.2"/>
+      <text x="15" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="15" font-weight="800">♻️ Kabadiwala Connect</text>
+      <rect x="330" y="10" width="100" height="20" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="380" y="24" fill="#34d399" font-family="'Fira Code', monospace" font-size="10" font-weight="700" text-anchor="middle">WEB PLATFORM</text>
+
+      <text x="15" y="46" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">E-waste recycling platform connecting informal scrap collectors</text>
+      <text x="15" y="62" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">with authorized recyclers (Digital lot creation &amp; price discovery).</text>
+
+      <text x="15" y="82" fill="#10b981" font-family="'Fira Code', monospace" font-size="10" font-weight="600">Tech: Java | Full Stack | AI | E-Waste</text>
+      <text x="340" y="82" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="10" font-weight="700">🔗 Live Demo 🌐</text>
+    </g>
+
+    <!-- Project 2: Email Classifier -->
+    <g transform="translate(0, 145)">
+      <rect width="445" height="95" rx="10" fill="url(#cardGrad)" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="15" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="15" font-weight="800">📧 Email Classifier</text>
+      <rect x="330" y="10" width="100" height="20" rx="10" fill="#0c4a6e" stroke="#00f0ff" stroke-width="1"/>
+      <text x="380" y="24" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10" font-weight="700" text-anchor="middle">PYTHON ML</text>
+
+      <text x="15" y="46" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Machine-learning based text classification model designed to</text>
+      <text x="15" y="62" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">automatically categorize incoming emails using NLP techniques.</text>
+
+      <text x="15" y="82" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="10" font-weight="600">Tech: Python | Scikit-Learn | Machine Learning | NLP</text>
+      <text x="360" y="82" fill="#ffaa00" font-family="'Fira Code', monospace" font-size="10" font-weight="700">🔗 Repo 💻</text>
+    </g>
+  </g>
+</svg>
