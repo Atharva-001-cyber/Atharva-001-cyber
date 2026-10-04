@@ -1,0 +1,33 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#050816"/>
+    <stop offset="0.55" stop-color="#0B1026"/>
+    <stop offset="1" stop-color="#160B2D"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="120" y1="60" x2="1080" y2="300" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#22D3EE"/>
+    <stop offset="0.5" stop-color="#818CF8"/>
+    <stop offset="1" stop-color="#C084FC"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+    <path d="M42 0H0V42" stroke="#FFFFFF" stroke-opacity=".055"/>
+  </pattern>
+</defs>
+<rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+<rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+<circle cx="1000" cy="90" r="150" fill="#7C3AED" fill-opacity=".12" filter="url(#glow)"/>
+<circle cx="180" cy="300" r="130" fill="#06B6D4" fill-opacity=".10" filter="url(#glow)"/>
+<path d="M-40 290C180 185 270 345 475 240C670 140 770 275 1240 80" stroke="url(#accent)" stroke-opacity=".55" stroke-width="2"/>
+<path d="M-20 315C210 205 285 365 500 255C700 150 820 285 1220 105" stroke="url(#accent)" stroke-opacity=".18" stroke-width="8" filter="url(#glow)"/>
+<g fill="#fff">
+  <circle cx="85" cy="72" r="2"/><circle cx="145" cy="125" r="1.5"/><circle cx="1080" cy="205" r="2"/>
+  <circle cx="1130" cy="70" r="1.5"/><circle cx="900" cy="55" r="1.5"/><circle cx="310" cy="70" r="1.5"/>
+</g>
+<text x="600" y="132" text-anchor="middle" fill="#E5E7EB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" letter-spacing="7">ATHARVA RANJAN SONI</text>
+<text x="600" y="190" text-anchor="middle" fill="white" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="56" font-weight="800" letter-spacing="2">H A R R Y</text>
+<text x="600" y="230" text-anchor="middle" fill="#A5B4FC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="2">JAVA DEVELOPER  •  DSA ENTHUSIAST  •  BUILDER</text>
+<rect x="430" y="258" width="340" height="2" rx="1" fill="url(#accent)"/>
+<text x="600" y="292" text-anchor="middle" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">LEARN  •  SOLVE  •  BUILD  •  SHIP</text>
+</svg>
