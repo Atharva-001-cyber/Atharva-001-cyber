@@ -1,4 +1,4 @@
-<svg fill="none" width="1000" height="910" viewBox="0 0 1000 910" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" width="1000" height="1050" viewBox="0 0 1000 1050" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="mainBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -33,321 +33,328 @@
 
     <!-- Glow Effect -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00f0ff" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00f0ff" flood-opacity="0.3"/>
     </filter>
   </defs>
 
-  <!-- Master Canvas Background (Enforces Dark Theme in Light Mode!) -->
-  <rect width="1000" height="910" rx="20" fill="url(#mainBg)" stroke="#1e293b" stroke-width="2.5"/>
+  <!-- Canvas Background (Enforces Pure Dark Cyberpunk Mode) -->
+  <rect width="1000" height="1050" rx="20" fill="url(#mainBg)" stroke="#1e293b" stroke-width="2.5"/>
 
   <!-- Cyber Grid Lines -->
-  <path d="M0 180H1000 M0 380H1000 M0 580H1000 M0 780H1000" stroke="#1e293b" stroke-opacity="0.25" stroke-dasharray="4 4"/>
-  <path d="M250 0V910 M500 0V910 M750 0V910" stroke="#1e293b" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+  <path d="M0 220H1000 M0 470H1000 M0 740H1000 M0 950H1000" stroke="#1e293b" stroke-opacity="0.3" stroke-dasharray="4 4"/>
+  <path d="M500 0V1050" stroke="#1e293b" stroke-opacity="0.3" stroke-dasharray="4 4"/>
 
-  <!-- ==================== SECTION 1: HEADER BANNER (Y: 20 -> 190) ==================== -->
-  <g transform="translate(30, 20)">
+  <!-- ==================== 1. HERO HEADER (Y: 25 -> 210) ==================== -->
+  <g transform="translate(35, 25)">
     <!-- 3D Java Cyber Shield Graphic -->
-    <g transform="translate(0, 0)">
-      <circle cx="65" cy="65" r="58" fill="#0f172a" stroke="#00f0ff" stroke-width="2" filter="url(#glow)"/>
-      <circle cx="65" cy="65" r="50" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="6 4"/>
-      <!-- Java Cup -->
-      <path d="M50 90 C 50 98, 80 98, 80 90 L 84 60 C 84 50, 46 50, 46 60 Z" fill="#ffaa00" filter="url(#glow)"/>
-      <path d="M84 64 C 94 64, 94 78, 84 78" stroke="#ffaa00" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-      <path d="M54 44 C 58 35, 50 28, 56 20" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" fill="none"/>
-      <path d="M65 42 C 69 32, 61 24, 67 16" stroke="#ec4899" stroke-width="2" stroke-linecap="round" fill="none"/>
-      <path d="M76 44 C 80 35, 72 28, 78 20" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <g transform="translate(0, 5)">
+      <circle cx="70" cy="70" r="62" fill="#0f172a" stroke="#00f0ff" stroke-width="2.5" filter="url(#glow)"/>
+      <circle cx="70" cy="70" r="52" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <!-- Official Java Logo -->
+      <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" x="38" y="32" width="64" height="64" />
     </g>
 
-    <!-- Title & Tagline -->
-    <g transform="translate(145, 5)">
-      <rect width="170" height="22" rx="11" fill="#0f172a" stroke="#00f0ff" stroke-width="1"/>
-      <text x="85" y="15" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="10" font-weight="700" text-anchor="middle">⚡ WELCOME TO MY REPO</text>
+    <!-- Title & Info -->
+    <g transform="translate(155, 10)">
+      <rect width="180" height="24" rx="12" fill="#0f172a" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="90" y="16" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="11" font-weight="700" text-anchor="middle">⚡ WELCOME TO MY REPO</text>
 
-      <text x="0" y="54" fill="url(#titleGrad)" font-family="'Inter', sans-serif" font-size="34" font-weight="900" filter="url(#glow)">Atharva Ranjan Soni</text>
+      <text x="0" y="58" fill="url(#titleGrad)" font-family="'Inter', sans-serif" font-size="40" font-weight="900" filter="url(#glow)">Atharva Ranjan Soni</text>
 
-      <text x="0" y="80" fill="#e2e8f0" font-family="'Fira Code', monospace" font-size="13" font-weight="600">
+      <text x="0" y="86" fill="#e2e8f0" font-family="'Fira Code', monospace" font-size="14" font-weight="700">
         <tspan fill="#ffaa00">JAVA DEVELOPER</tspan><tspan fill="#475569"> | </tspan>
         <tspan fill="#00f0ff">DSA ENTHUSIAST</tspan><tspan fill="#475569"> | </tspan>
         <tspan fill="#ec4899">BUILDING REAL SOLUTIONS</tspan>
       </text>
 
       <!-- SRMCEM Badge -->
-      <rect x="0" y="96" width="390" height="28" rx="7" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
-      <text x="10" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="500">
-        🎓 <tspan fill="#f8fafc" font-weight="600">B.Tech 3rd Year</tspan> @ Shri Ramswaroop Memorial College (SRMCEM)
+      <rect x="0" y="102" width="450" height="32" rx="8" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="123" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13" font-weight="500">
+        🎓 <tspan fill="#f8fafc" font-weight="700">B.Tech 3rd Year Student</tspan> @ Shri Ramswaroop Memorial College (SRMCEM)
       </text>
-    </g>
-
-    <!-- Platforms Grid (Right Side) -->
-    <g transform="translate(650, 0)">
-      <!-- GitHub -->
-      <rect width="290" height="34" rx="7" fill="#1e293b" stroke="#00f0ff" stroke-width="1.2"/>
-      <path d="M15 17c0-4.4 3.6-8 8-8s8 3.6 8 8c0 3.5-2.3 6.5-5.5 7.6-.4.1-.5-.2-.5-.4v-1.5c-2.2.5-2.7-1.1-2.7-1.1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.4.7.1-.5.3-.9.5-1.1-1.8-.2-3.7-.9-3.7-4 0-.9.3-1.6.8-2.2-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.3.9.7-.2 1.4-.3 2.1-.3s1.4.1 2.1.3c1.6-1.1 2.3-.9 2.3-.9.5 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.2 0 3.1-1.9 3.8-3.7 4 .3.3.6.8.6 1.6v2.4c0 .2-.1.5-.5.4C30.3 23.5 31 20.5 31 17z" fill="#00f0ff"/>
-      <text x="38" y="21" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="11" font-weight="700">GitHub:</text>
-      <text x="275" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="end">Atharva-001-cyber</text>
-
-      <!-- LeetCode -->
-      <g transform="translate(0, 39)">
-        <rect width="290" height="34" rx="7" fill="#1e293b" stroke="#ffaa00" stroke-width="1.2"/>
-        <path d="M16 11l-3 3 2 2 4-3-3-2z" fill="#ffaa00"/>
-        <path d="M12 16l3 3-2 2-3-3 2-2z" fill="#ffffff"/>
-        <text x="38" y="21" fill="#ffaa00" font-family="'Fira Code', monospace" font-size="11" font-weight="700">LeetCode:</text>
-        <text x="275" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="end">Atharva_Soni-20</text>
-      </g>
-
-      <!-- CodeChef -->
-      <g transform="translate(0, 78)">
-        <rect width="290" height="34" rx="7" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
-        <text x="15" y="22" fill="#10b981" font-family="'Inter', sans-serif" font-size="14">👨‍🍳</text>
-        <text x="38" y="21" fill="#10b981" font-family="'Fira Code', monospace" font-size="11" font-weight="700">CodeChef:</text>
-        <text x="275" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="end">span_fish_77</text>
-      </g>
-
-      <!-- Codolio -->
-      <g transform="translate(0, 117)">
-        <rect width="290" height="34" rx="7" fill="#1e293b" stroke="#a855f7" stroke-width="1.2"/>
-        <text x="15" y="22" fill="#a855f7" font-family="'Inter', sans-serif" font-size="14">⚡</text>
-        <text x="38" y="21" fill="#a855f7" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Codolio:</text>
-        <text x="275" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="end">atharva@123</text>
-      </g>
     </g>
   </g>
 
-  <line x1="30" y1="185" x2="970" y2="185" stroke="#1e293b" stroke-width="1.5"/>
-
-  <!-- ==================== SECTION 2: TECH STACK (WITH OFFICIAL BRAND LOGOS) & PROJECTS (Y: 200 -> 440) ==================== -->
-  <g transform="translate(30, 200)">
-    <!-- Left Half: Tech Stack with Official Logos -->
+  <!-- ==================== 2. PLATFORMS ROW (Y: 175 -> 235) ==================== -->
+  <g transform="translate(35, 175)">
+    <!-- GitHub -->
     <g transform="translate(0, 0)">
-      <text x="0" y="18" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="15" font-weight="700">⚙️ Tech Stack &amp; Tools</text>
-      <line x1="0" y1="26" x2="440" y2="26" stroke="#334155" stroke-width="1"/>
+      <rect width="220" height="52" rx="10" fill="url(#tileBg)" stroke="#00f0ff" stroke-width="1.5"/>
+      <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" x="12" y="11" width="30" height="30" />
+      <text x="50" y="24" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="12" font-weight="800">GitHub</text>
+      <text x="50" y="40" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600">Atharva-001-cyber</text>
+    </g>
 
-      <!-- Row 1: Languages & DB -->
-      <g transform="translate(0, 38)">
+    <!-- LeetCode -->
+    <g transform="translate(240, 0)">
+      <rect width="220" height="52" rx="10" fill="url(#tileBg)" stroke="#ffaa00" stroke-width="1.5"/>
+      <image href="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/leetcode.svg" x="12" y="11" width="30" height="30" />
+      <text x="50" y="24" fill="#ffaa00" font-family="'Fira Code', monospace" font-size="12" font-weight="800">LeetCode</text>
+      <text x="50" y="40" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600">Atharva_Soni-20</text>
+    </g>
+
+    <!-- CodeChef -->
+    <g transform="translate(480, 0)">
+      <rect width="220" height="52" rx="10" fill="url(#tileBg)" stroke="#10b981" stroke-width="1.5"/>
+      <image href="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/codechef.svg" x="12" y="11" width="30" height="30" />
+      <text x="50" y="24" fill="#10b981" font-family="'Fira Code', monospace" font-size="12" font-weight="800">CodeChef</text>
+      <text x="50" y="40" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600">span_fish_77</text>
+    </g>
+
+    <!-- Codolio -->
+    <g transform="translate(720, 0)">
+      <rect width="210" height="52" rx="10" fill="url(#tileBg)" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="14" y="34" fill="#a855f7" font-family="'Inter', sans-serif" font-size="22">⚡</text>
+      <text x="45" y="24" fill="#a855f7" font-family="'Fira Code', monospace" font-size="12" font-weight="800">Codolio</text>
+      <text x="45" y="40" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="600">atharva@123</text>
+    </g>
+  </g>
+
+  <line x1="35" y1="245" x2="965" y2="245" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- ==================== 3. TECH STACK & FEATURED PROJECTS (Y: 260 -> 480) ==================== -->
+  <g transform="translate(35, 260)">
+    <!-- LEFT HALF: TECH STACK WITH OFFICIAL COLOR LOGOS -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="20" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="18" font-weight="800">⚙️ Tech Stack &amp; Tools</text>
+      <line x1="0" y1="30" x2="445" y2="30" stroke="#334155" stroke-width="1"/>
+
+      <!-- Category 1: Languages & DB -->
+      <text x="0" y="52" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="12" font-weight="700">LANGUAGES &amp; DATABASE</text>
+      <g transform="translate(0, 62)">
         <!-- Java -->
-        <rect width="100" height="38" rx="8" fill="url(#tileBg)" stroke="#ffaa00" stroke-width="1.2"/>
-        <!-- Java Cup Logo -->
-        <path d="M15 28c0 0-.8.2-1.1.5 0 0 .4.4 1.1.3.8-.1 1.8-.4 2.6-.6 1.5-.2 3.1-.1 4.6.2.8.1 1.6.4 2.3.6.7.2 1.3.4 2 .6.8.1 1.2-.2 1.2-.2s-.3-.2-1-.4c-1-.2-2.1-.3-3.1-.4-1.5-.1-3.1-.1-4.6.1-1.3.2-2.7.5-4 .6-.9.1-1.6-.2-1.6-.2z" fill="#ED8B00"/>
-        <text x="36" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">Java</text>
+        <rect width="100" height="42" rx="8" fill="url(#tileBg)" stroke="#ffaa00" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" x="8" y="6" width="28" height="28"/>
+        <text x="42" y="26" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="13" font-weight="700">Java</text>
 
         <!-- Python -->
-        <rect x="110" width="100" height="38" rx="8" fill="url(#tileBg)" stroke="#38bdf8" stroke-width="1.2"/>
-        <!-- Python Snake Logo -->
-        <path d="M125 12c-3 0-2.8 1.3-2.8 1.3l.1 1.4h3.8v.4h-5.2s-2.3.2-2.3 3.3c0 3 1.9 2.9 1.9 2.9h1.1v-1.3s-.1-1.5 1.5-1.5h3.2s1.8 0 1.8-1.5v-3.7s0-1.3-3.1-1.3zm-1.5.8a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1z" fill="#3776AB"/>
-        <path d="M125 24c3 0 2.8-1.3 2.8-1.3l-.1-1.4h-3.8v-.4h5.2s2.3-.2 2.3-3.3c0-3-1.9-2.9-1.9-2.9h-1.1v1.3s.1 1.5-1.5 1.5h-3.2s-1.8 0-1.8 1.5v3.7s0 1.3 3.1 1.3zm1.5-.8a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z" fill="#FFE873"/>
-        <text x="142" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">Python</text>
+        <rect x="110" width="105" height="42" rx="8" fill="url(#tileBg)" stroke="#38bdf8" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" x="118" y="6" width="28" height="28"/>
+        <text x="152" y="26" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="13" font-weight="700">Python</text>
 
         <!-- JavaScript -->
-        <rect x="220" width="115" height="38" rx="8" fill="url(#tileBg)" stroke="#facc15" stroke-width="1.2"/>
-        <rect x="230" y="11" width="16" height="16" rx="3" fill="#F7DF1E"/>
-        <text x="233" y="23" fill="#000000" font-family="'Inter', sans-serif" font-size="10" font-weight="900">JS</text>
-        <text x="252" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">JavaScript</text>
+        <rect x="225" width="120" height="42" rx="8" fill="url(#tileBg)" stroke="#facc15" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" x="233" y="6" width="28" height="28"/>
+        <text x="267" y="26" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="13" font-weight="700">JavaScript</text>
 
         <!-- MySQL -->
-        <rect x="345" width="95" height="38" rx="8" fill="url(#tileBg)" stroke="#0284c7" stroke-width="1.2"/>
-        <text x="355" y="24" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="14">🐬</text>
-        <text x="373" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">MySQL</text>
+        <rect x="355" width="90" height="42" rx="8" fill="url(#tileBg)" stroke="#0284c7" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" x="361" y="6" width="28" height="28"/>
+        <text x="393" y="26" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="13" font-weight="700">MySQL</text>
       </g>
 
-      <!-- Row 2: Frontend & Tools -->
-      <g transform="translate(0, 84)">
+      <!-- Category 2: Frontend & Tools -->
+      <text x="0" y="126" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="12" font-weight="700">FRONTEND &amp; TOOLS</text>
+      <g transform="translate(0, 136)">
         <!-- HTML5 -->
-        <rect width="80" height="36" rx="8" fill="url(#tileBg)" stroke="#E34F26" stroke-width="1"/>
-        <path d="M10 11h12l-1.1 12-4.9 1.4-4.9-1.4L10 11z" fill="#E34F26"/>
-        <text x="26" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">HTML5</text>
+        <rect width="90" height="40" rx="8" fill="url(#tileBg)" stroke="#E34F26" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" x="8" y="6" width="26" height="26"/>
+        <text x="40" y="25" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">HTML5</text>
 
         <!-- CSS3 -->
-        <rect x="88" width="75" height="36" rx="8" fill="url(#tileBg)" stroke="#1572B6" stroke-width="1"/>
-        <path d="M98 11h12l-1.1 12-4.9 1.4-4.9-1.4L98 11z" fill="#1572B6"/>
-        <text x="114" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">CSS3</text>
+        <rect x="98" width="85" height="40" rx="8" fill="url(#tileBg)" stroke="#1572B6" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" x="106" y="6" width="26" height="26"/>
+        <text x="138" y="25" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">CSS3</text>
 
         <!-- Git -->
-        <rect x="171" width="65" height="36" rx="8" fill="url(#tileBg)" stroke="#F05032" stroke-width="1"/>
-        <path d="M181 12l5 5-3 3-5-5z" fill="#F05032"/>
-        <text x="194" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Git</text>
+        <rect x="191" width="70" height="40" rx="8" fill="url(#tileBg)" stroke="#F05032" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" x="197" y="6" width="26" height="26"/>
+        <text x="229" y="25" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">Git</text>
 
-        <!-- VSCode -->
-        <rect x="244" width="95" height="36" rx="8" fill="url(#tileBg)" stroke="#007ACC" stroke-width="1"/>
-        <path d="M254 13l4-3 5 3-9 9z" fill="#007ACC"/>
-        <text x="267" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">VSCode</text>
+        <!-- VS Code -->
+        <rect x="269" width="95" height="40" rx="8" fill="url(#tileBg)" stroke="#007ACC" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" x="275" y="6" width="26" height="26"/>
+        <text x="307" y="25" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">VSCode</text>
 
         <!-- Figma -->
-        <rect x="347" width="80" height="36" rx="8" fill="url(#tileBg)" stroke="#A259FF" stroke-width="1"/>
-        <circle cx="357" cy="23" r="4" fill="#F24E1E"/>
-        <text x="367" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Figma</text>
+        <rect x="372" width="73" height="40" rx="8" fill="url(#tileBg)" stroke="#F24E1E" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" x="378" y="6" width="26" height="26"/>
+        <text x="408" y="25" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">Figma</text>
       </g>
 
-      <!-- Row 3: Jira & GitHub -->
-      <g transform="translate(0, 128)">
-        <rect width="75" height="34" rx="8" fill="url(#tileBg)" stroke="#0052CC" stroke-width="1"/>
-        <path d="M10 17h10l-5 5z" fill="#0052CC"/>
-        <text x="27" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Jira</text>
+      <!-- Category 3: Jira & GitHub -->
+      <g transform="translate(0, 184)">
+        <!-- Jira -->
+        <rect width="75" height="38" rx="8" fill="url(#tileBg)" stroke="#0052CC" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg" x="8" y="6" width="24" height="24"/>
+        <text x="38" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">Jira</text>
 
-        <rect x="83" width="95" height="34" rx="8" fill="url(#tileBg)" stroke="#FFFFFF" stroke-width="1"/>
-        <path d="M93 17c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="#FFFFFF"/>
-        <text x="109" y="22" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">GitHub</text>
+        <!-- GitHub Tool -->
+        <rect x="85" width="95" height="38" rx="8" fill="url(#tileBg)" stroke="#FFFFFF" stroke-width="1.2"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" x="91" y="6" width="24" height="24"/>
+        <text x="122" y="24" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="700">GitHub</text>
       </g>
     </g>
 
     <!-- Vertical Divider -->
-    <line x1="480" y1="10" x2="480" y2="210" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="480" y1="10" x2="480" y2="215" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
 
-    <!-- Right Half: Featured Projects -->
+    <!-- RIGHT HALF: FEATURED PROJECTS -->
     <g transform="translate(505, 0)">
-      <text x="0" y="18" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="15" font-weight="700">🚀 Featured Projects</text>
-      <line x1="0" y1="26" x2="460" y2="26" stroke="#334155" stroke-width="1"/>
+      <text x="0" y="20" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="18" font-weight="800">🚀 Featured Projects</text>
+      <line x1="0" y1="30" x2="440" y2="30" stroke="#334155" stroke-width="1"/>
 
       <!-- Project 1: Kabadiwala Connect -->
-      <g transform="translate(0, 38)">
-        <rect width="460" height="84" rx="10" fill="url(#cardBg)" stroke="#10b981" stroke-width="1.2"/>
-        <text x="15" y="22" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14" font-weight="800">♻️ Kabadiwala Connect</text>
-        <rect x="345" y="8" width="100" height="18" rx="9" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
-        <text x="395" y="21" fill="#34d399" font-family="'Fira Code', monospace" font-size="9" font-weight="700" text-anchor="middle">WEB PLATFORM</text>
+      <g transform="translate(0, 42)">
+        <rect width="440" height="88" rx="10" fill="url(#cardBg)" stroke="#10b981" stroke-width="1.5"/>
+        <text x="15" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="16" font-weight="800">♻️ Kabadiwala Connect</text>
+        <rect x="325" y="8" width="100" height="20" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+        <text x="375" y="22" fill="#34d399" font-family="'Fira Code', monospace" font-size="9" font-weight="800" text-anchor="middle">WEB PLATFORM</text>
 
-        <text x="15" y="42" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">E-waste recycling platform connecting informal scrap collectors</text>
-        <text x="15" y="56" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">with recyclers (Digital lot creation &amp; price discovery).</text>
-        <text x="15" y="73" fill="#10b981" font-family="'Fira Code', monospace" font-size="10" font-weight="600">Tech: Java | Full Stack | AI | E-Waste</text>
-        <text x="360" y="73" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="10" font-weight="700">🌐 Live Demo</text>
+        <text x="15" y="44" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">E-waste recycling platform connecting informal scrap collectors</text>
+        <text x="15" y="60" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">with recyclers (Digital lot creation &amp; price discovery).</text>
+        <text x="15" y="78" fill="#10b981" font-family="'Fira Code', monospace" font-size="10" font-weight="700">Tech: Java | Full Stack | AI | E-Waste</text>
+        <text x="350" y="78" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="10" font-weight="800">🌐 Live Demo</text>
       </g>
 
       <!-- Project 2: Email Classifier -->
-      <g transform="translate(0, 130)">
-        <rect width="460" height="84" rx="10" fill="url(#cardBg)" stroke="#00f0ff" stroke-width="1.2"/>
-        <text x="15" y="22" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14" font-weight="800">📧 Email Classifier</text>
-        <rect x="345" y="8" width="100" height="18" rx="9" fill="#0c4a6e" stroke="#00f0ff" stroke-width="1"/>
-        <text x="395" y="21" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="9" font-weight="700" text-anchor="middle">PYTHON ML</text>
+      <g transform="translate(0, 138)">
+        <rect width="440" height="88" rx="10" fill="url(#cardBg)" stroke="#00f0ff" stroke-width="1.5"/>
+        <text x="15" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="16" font-weight="800">📧 Email Classifier</text>
+        <rect x="325" y="8" width="100" height="20" rx="10" fill="#0c4a6e" stroke="#00f0ff" stroke-width="1"/>
+        <text x="375" y="22" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="9" font-weight="800" text-anchor="middle">PYTHON ML</text>
 
-        <text x="15" y="42" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Machine-learning based text classification model designed to</text>
-        <text x="15" y="56" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">automatically categorize incoming emails using NLP techniques.</text>
-        <text x="15" y="73" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="10" font-weight="600">Tech: Python | Scikit-Learn | ML | NLP</text>
-        <text x="380" y="73" fill="#ffaa00" font-family="'Fira Code', monospace" font-size="10" font-weight="700">💻 Repo</text>
+        <text x="15" y="44" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Machine-learning based text classification model designed to</text>
+        <text x="15" y="60" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">automatically categorize incoming emails using NLP techniques.</text>
+        <text x="15" y="78" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="10" font-weight="700">Tech: Python | Scikit-Learn | ML | NLP</text>
+        <text x="370" y="78" fill="#ffaa00" font-family="'Fira Code', monospace" font-size="10" font-weight="800">💻 Repo</text>
       </g>
     </g>
   </g>
 
-  <line x1="30" y1="440" x2="970" y2="440" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="35" y1="495" x2="965" y2="495" stroke="#1e293b" stroke-width="1.5"/>
 
-  <!-- ==================== SECTION 3: DSA JOURNEY MATRIX (Y: 455 -> 670) ==================== -->
-  <g transform="translate(30, 455)">
-    <text x="0" y="18" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="15" font-weight="700">🧩 DSA Journey &amp; Skill Matrix</text>
-    <text x="320" y="18" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="11">Daily Practice in Java | Repo: <tspan fill="#ffaa00">Atharva-001-cyber/LeetCode_Problem</tspan></text>
-    <line x1="0" y1="26" x2="940" y2="26" stroke="#334155" stroke-width="1"/>
+  <!-- ==================== 4. DSA JOURNEY MATRIX (Y: 510 -> 760) ==================== -->
+  <g transform="translate(35, 510)">
+    <text x="0" y="20" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="18" font-weight="800">🧩 DSA Journey &amp; Skill Matrix</text>
+    <text x="350" y="20" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="12">Daily Java Practice | Repo: <tspan fill="#ffaa00" font-weight="700">Atharva-001-cyber/LeetCode_Problem</tspan></text>
+    <line x1="0" y1="30" x2="930" y2="30" stroke="#334155" stroke-width="1"/>
 
     <!-- Left Column (Topics 1 to 5) -->
-    <g transform="translate(0, 38)" font-family="'Fira Code', monospace" font-size="11">
+    <g transform="translate(0, 45)" font-family="'Fira Code', monospace" font-size="13">
+      <!-- Searching -->
       <g transform="translate(0, 0)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🔍 Searching</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="url(#barGreen)"/>
-        <text x="320" y="14" fill="#10b981" font-weight="700">100% (Done)</text>
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🔍 Searching</text>
+        <rect x="150" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="150" y="2" width="180" height="16" rx="8" fill="url(#barGreen)"/>
+        <text x="345" y="16" fill="#10b981" font-weight="800">100% (Done)</text>
       </g>
-      <g transform="translate(0, 26)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🔢 Arrays</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="126" height="13" rx="6.5" fill="url(#barBlue)"/>
-        <text x="320" y="14" fill="#00f0ff" font-weight="700">70% (Active)</text>
+      <!-- Arrays -->
+      <g transform="translate(0, 32)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🔢 Arrays</text>
+        <rect x="150" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="150" y="2" width="126" height="16" rx="8" fill="url(#barBlue)"/>
+        <text x="345" y="16" fill="#00f0ff" font-weight="800">70% (Active)</text>
       </g>
-      <g transform="translate(0, 52)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🔤 Strings</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="126" height="13" rx="6.5" fill="url(#barBlue)"/>
-        <text x="320" y="14" fill="#00f0ff" font-weight="700">70% (Active)</text>
+      <!-- Strings -->
+      <g transform="translate(0, 64)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🔤 Strings</text>
+        <rect x="150" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="150" y="2" width="126" height="16" rx="8" fill="url(#barBlue)"/>
+        <text x="345" y="16" fill="#00f0ff" font-weight="800">70% (Active)</text>
       </g>
-      <g transform="translate(0, 78)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🔗 Linked Lists</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="126" height="13" rx="6.5" fill="url(#barBlue)"/>
-        <text x="320" y="14" fill="#00f0ff" font-weight="700">70% (Active)</text>
+      <!-- Linked Lists -->
+      <g transform="translate(0, 96)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🔗 Linked Lists</text>
+        <rect x="150" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="150" y="2" width="126" height="16" rx="8" fill="url(#barBlue)"/>
+        <text x="345" y="16" fill="#00f0ff" font-weight="800">70% (Active)</text>
       </g>
-      <g transform="translate(0, 104)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🥞 Stacks/Queues</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="126" height="13" rx="6.5" fill="url(#barBlue)"/>
-        <text x="320" y="14" fill="#00f0ff" font-weight="700">70% (Active)</text>
+      <!-- Stacks & Queues -->
+      <g transform="translate(0, 128)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🥞 Stacks/Queues</text>
+        <rect x="150" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="150" y="2" width="126" height="16" rx="8" fill="url(#barBlue)"/>
+        <text x="345" y="16" fill="#00f0ff" font-weight="800">70% (Active)</text>
       </g>
     </g>
 
     <!-- Right Column (Topics 6 to 10) -->
-    <g transform="translate(490, 38)" font-family="'Fira Code', monospace" font-size="11">
+    <g transform="translate(485, 45)" font-family="'Fira Code', monospace" font-size="13">
+      <!-- Sorting -->
       <g transform="translate(0, 0)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">📊 Sorting</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="126" height="13" rx="6.5" fill="url(#barBlue)"/>
-        <text x="320" y="14" fill="#00f0ff" font-weight="700">70% (Active)</text>
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">📊 Sorting</text>
+        <rect x="140" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="140" y="2" width="126" height="16" rx="8" fill="url(#barBlue)"/>
+        <text x="335" y="16" fill="#00f0ff" font-weight="800">70% (Active)</text>
       </g>
-      <g transform="translate(0, 26)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🌳 Trees</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="126" height="13" rx="6.5" fill="url(#barBlue)"/>
-        <text x="320" y="14" fill="#00f0ff" font-weight="700">70% (Active)</text>
+      <!-- Trees -->
+      <g transform="translate(0, 32)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🌳 Trees</text>
+        <rect x="140" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="140" y="2" width="126" height="16" rx="8" fill="url(#barBlue)"/>
+        <text x="335" y="16" fill="#00f0ff" font-weight="800">70% (Active)</text>
       </g>
-      <g transform="translate(0, 52)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🌐 Graphs</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="90" height="13" rx="6.5" fill="url(#barOrange)"/>
-        <text x="320" y="14" fill="#ffaa00" font-weight="700">50% (Building)</text>
+      <!-- Graphs -->
+      <g transform="translate(0, 64)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🌐 Graphs</text>
+        <rect x="140" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="140" y="2" width="90" height="16" rx="8" fill="url(#barOrange)"/>
+        <text x="335" y="16" fill="#ffaa00" font-weight="800">50% (Building)</text>
       </g>
-      <g transform="translate(0, 78)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🎄 AVL Trees</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="90" height="13" rx="6.5" fill="url(#barOrange)"/>
-        <text x="320" y="14" fill="#ffaa00" font-weight="700">50% (Building)</text>
+      <!-- AVL Trees -->
+      <g transform="translate(0, 96)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🎄 AVL Trees</text>
+        <rect x="140" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="140" y="2" width="90" height="16" rx="8" fill="url(#barOrange)"/>
+        <text x="335" y="16" fill="#ffaa00" font-weight="800">50% (Building)</text>
       </g>
-      <g transform="translate(0, 104)">
-        <text x="0" y="14" fill="#f8fafc" font-weight="600">🔄 Recursion</text>
-        <rect x="130" y="3" width="180" height="13" rx="6.5" fill="#1e293b"/>
-        <rect x="130" y="3" width="90" height="13" rx="6.5" fill="url(#barOrange)"/>
-        <text x="320" y="14" fill="#ffaa00" font-weight="700">50% (Building)</text>
+      <!-- Recursion -->
+      <g transform="translate(0, 128)">
+        <text x="0" y="16" fill="#f8fafc" font-weight="700">🔄 Recursion</text>
+        <rect x="140" y="2" width="180" height="16" rx="8" fill="#1e293b"/>
+        <rect x="140" y="2" width="90" height="16" rx="8" fill="url(#barOrange)"/>
+        <text x="335" y="16" fill="#ffaa00" font-weight="800">50% (Building)</text>
       </g>
     </g>
   </g>
 
-  <line x1="30" y1="675" x2="970" y2="675" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="35" y1="765" x2="965" y2="765" stroke="#1e293b" stroke-width="1.5"/>
 
-  <!-- ==================== SECTION 4: SOCIAL CONNECT & FOOTER (Y: 690 -> 890) ==================== -->
-  <g transform="translate(30, 690)">
-    <text x="0" y="18" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="15" font-weight="700">🌐 Let's Connect</text>
-    <line x1="0" y1="26" x2="940" y2="26" stroke="#334155" stroke-width="1"/>
+  <!-- ==================== 5. SOCIAL CONNECT & FOOTER (Y: 780 -> 1010) ==================== -->
+  <g transform="translate(35, 780)">
+    <text x="0" y="20" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="18" font-weight="800">🌐 Let's Connect</text>
+    <line x1="0" y1="30" x2="930" y2="30" stroke="#334155" stroke-width="1"/>
 
-    <!-- Social Buttons -->
-    <g transform="translate(0, 38)">
+    <!-- Social Buttons Grid -->
+    <g transform="translate(0, 44)">
       <!-- LinkedIn -->
       <g transform="translate(0, 0)">
-        <rect width="215" height="45" rx="9" fill="#1e293b" stroke="#0a66c2" stroke-width="1.2"/>
-        <path d="M15 15h3v15h-3zm1.5-5a1.75 1.75 0 110 3.5 1.75 1.75 0 010-3.5zM21 15h3v2.2c.4-.7 1.3-1.3 2.5-1.3 2.7 0 3.2 1.8 3.2 4.1v5h-3v-4.4c0-1.1-.4-1.8-1.4-1.8-1 0-1.3.7-1.3 1.8v4.4h-3z" fill="#0A66C2"/>
-        <text x="38" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">LinkedIn</text>
-        <text x="38" y="34" fill="#0a66c2" font-family="'Fira Code', monospace" font-size="9" font-weight="600">Atharva Ranjan Soni</text>
+        <rect width="215" height="50" rx="10" fill="url(#tileBg)" stroke="#0a66c2" stroke-width="1.5"/>
+        <image href="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" x="12" y="10" width="30" height="30"/>
+        <text x="50" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="800">LinkedIn</text>
+        <text x="50" y="38" fill="#0a66c2" font-family="'Fira Code', monospace" font-size="10" font-weight="600">Atharva Ranjan Soni</text>
       </g>
 
       <!-- Instagram -->
-      <g transform="translate(230, 0)">
-        <rect width="215" height="45" rx="9" fill="#1e293b" stroke="#e4405f" stroke-width="1.2"/>
-        <text x="14" y="28" fill="#e4405f" font-family="'Inter', sans-serif" font-size="14">📸</text>
-        <text x="38" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Instagram</text>
-        <text x="38" y="34" fill="#e4405f" font-family="'Fira Code', monospace" font-size="9" font-weight="600">@_.atharva__1</text>
+      <g transform="translate(235, 0)">
+        <rect width="215" height="50" rx="10" fill="url(#tileBg)" stroke="#e4405f" stroke-width="1.5"/>
+        <image href="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/instagram.svg" x="12" y="10" width="30" height="30"/>
+        <text x="50" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="800">Instagram</text>
+        <text x="50" y="38" fill="#e4405f" font-family="'Fira Code', monospace" font-size="10" font-weight="600">@_.atharva__1</text>
       </g>
 
       <!-- X / Twitter -->
-      <g transform="translate(460, 0)">
-        <rect width="215" height="45" rx="9" fill="#1e293b" stroke="#ffffff" stroke-width="1.2"/>
-        <path d="M473 17l4 5-5 6h-3l3-4-4-7h3z" fill="#FFFFFF"/>
-        <text x="478" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">X / Twitter</text>
-        <text x="478" y="34" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="9" font-weight="600">@AtharvRanj52745</text>
+      <g transform="translate(470, 0)">
+        <rect width="215" height="50" rx="10" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1.5"/>
+        <image href="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg" x="12" y="10" width="30" height="30"/>
+        <text x="50" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="800">X / Twitter</text>
+        <text x="50" y="38" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="10" font-weight="600">@AtharvRanj52745</text>
       </g>
 
       <!-- Email -->
-      <g transform="translate(690, 0)">
-        <rect width="250" height="45" rx="9" fill="#1e293b" stroke="#ea4335" stroke-width="1.2"/>
-        <text x="14" y="28" fill="#ea4335" font-family="'Inter', sans-serif" font-size="14">✉️</text>
-        <text x="38" y="21" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="11" font-weight="700">Email</text>
-        <text x="38" y="34" fill="#ea4335" font-family="'Fira Code', monospace" font-size="9" font-weight="600">atharavranjans65@gmail.com</text>
+      <g transform="translate(705, 0)">
+        <rect width="225" height="50" rx="10" fill="url(#tileBg)" stroke="#ea4335" stroke-width="1.5"/>
+        <text x="14" y="32" fill="#ea4335" font-family="'Inter', sans-serif" font-size="20">✉️</text>
+        <text x="45" y="23" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="12" font-weight="800">Email</text>
+        <text x="45" y="38" fill="#ea4335" font-family="'Fira Code', monospace" font-size="9" font-weight="600">atharavranjans65</text>
       </g>
     </g>
 
     <!-- Tagline Footer Banner -->
-    <g transform="translate(0, 100)">
-      <rect width="940" height="40" rx="8" fill="#0f172a" stroke="#00f0ff" stroke-width="1.2"/>
-      <text x="470" y="25" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="12" font-weight="700" text-anchor="middle">CODE • LEARN • SOLVE • BUILD</text>
+    <g transform="translate(0, 115)">
+      <rect width="930" height="42" rx="10" fill="#0f172a" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="465" y="26" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="13" font-weight="800" text-anchor="middle">CODE • LEARN • SOLVE • BUILD</text>
     </g>
   </g>
 </svg>
