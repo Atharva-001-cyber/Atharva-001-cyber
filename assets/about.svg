@@ -1,0 +1,80 @@
+<svg fill="none" width="1000" height="280" viewBox="0 0 1000 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#11111b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Container Card -->
+  <rect width="1000" height="280" rx="16" fill="url(#cardBg)" stroke="#1e293b" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Left Column: About Info -->
+  <g transform="translate(35, 30)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="20" font-weight="700">👨‍💻 About Me</text>
+    <line x1="0" y1="36" x2="520" y2="36" stroke="#334155" stroke-width="1"/>
+
+    <!-- Bullet 1: Education -->
+    <circle cx="10" cy="65" r="4" fill="#ffaa00"/>
+    <text x="24" y="69" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Education:</text>
+    <text x="105" y="69" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="14">B.Tech 3rd Year Student @ <tspan fill="#00f0ff" font-weight="600">SRMCEM</tspan></text>
+
+    <!-- Bullet 2: Focus -->
+    <circle cx="10" cy="100" r="4" fill="#00f0ff"/>
+    <text x="24" y="104" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Core Focus:</text>
+    <text x="115" y="104" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="14">Java Developer | Object-Oriented &amp; Backend Engg</text>
+
+    <!-- Bullet 3: DSA -->
+    <circle cx="10" cy="135" r="4" fill="#7000ff"/>
+    <text x="24" y="139" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14" font-weight="600">DSA Focus:</text>
+    <text x="115" y="139" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="14">Mastering Data Structures &amp; Algorithms with Java</text>
+
+    <!-- Bullet 4: Passion -->
+    <circle cx="10" cy="170" r="4" fill="#ff007a"/>
+    <text x="24" y="174" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Passion:</text>
+    <text x="95" y="174" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="14">Building practical, real-world software products</text>
+
+    <!-- Bullet 5: Goal -->
+    <circle cx="10" cy="205" r="4" fill="#10b981"/>
+    <text x="24" y="209" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Goal:</text>
+    <text x="70" y="209" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="14">Continuous problem solving &amp; engineering excellence</text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="580" y1="30" x2="580" y2="250" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Right Column: Terminal Window -->
+  <g transform="translate(610, 30)">
+    <!-- Terminal Header -->
+    <rect width="355" height="220" rx="12" fill="url(#termBg)" stroke="#313244" stroke-width="1.5"/>
+    <rect width="355" height="32" rx="12" fill="#181825"/>
+    <!-- Window Controls -->
+    <circle cx="20" cy="16" r="5" fill="#ff5f56"/>
+    <circle cx="36" cy="16" r="5" fill="#ffbd2e"/>
+    <circle cx="52" cy="16" r="5" fill="#27c93f"/>
+    <text x="177" y="21" fill="#a6adc8" font-family="'Fira Code', monospace" font-size="11" text-anchor="middle">Developer.java</text>
+
+    <!-- Code Content -->
+    <g transform="translate(20, 55)" font-family="'Fira Code', monospace" font-size="13">
+      <text y="0"><tspan fill="#cba6f7">public class</tspan> <tspan fill="#f9e2af">Developer</tspan> {</text>
+      <text y="24" x="15"><tspan fill="#cba6f7">public static void</tspan> <tspan fill="#89b4fa">main</tspan>(<tspan fill="#f9e2af">String</tspan>[] args) {</text>
+      <text y="48" x="35"><tspan fill="#f38ba8">boolean</tspan> learning = <tspan fill="#fab387">true</tspan>;</text>
+
+      <text y="80" x="35"><tspan fill="#cba6f7">while</tspan> (learning) {</text>
+      <text y="102" x="55" fill="#89b4fa">code();</text>
+      <text y="122" x="55" fill="#a6e3a1">solve();</text>
+      <text y="142" x="55" fill="#f9e2af">build();</text>
+      <text y="162" x="35">}</text>
+      <text y="182" x="15">}</text>
+      <text y="202" x="0">}</text>
+    </g>
+  </g>
+</svg>

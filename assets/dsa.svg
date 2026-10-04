@@ -1,0 +1,104 @@
+<svg fill="none" width="1000" height="340" viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="barGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+    <linearGradient id="barOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#ffaa00"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="340" rx="16" fill="url(#cardBg)" stroke="#1e293b" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Title Header -->
+  <text x="35" y="45" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="20" font-weight="700">🧩 DSA Journey &amp; Skill Matrix</text>
+  <text x="380" y="45" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">Daily Problem Solving in Java | Repo: <tspan fill="#ffaa00" font-family="'Fira Code', monospace">LeetCode_Problem</tspan></text>
+  <line x1="35" y1="58" x2="965" y2="58" stroke="#334155" stroke-width="1"/>
+
+  <!-- Column 1 (Topics 1-5) -->
+  <g transform="translate(35, 80)" font-family="'Fira Code', monospace" font-size="13">
+    <!-- Searching -->
+    <text x="0" y="20" fill="#f8fafc" font-weight="600">🔍 Searching</text>
+    <rect x="150" y="6" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="150" y="6" width="220" height="18" rx="9" fill="url(#barGreen)"/>
+    <text x="380" y="20" fill="#10b981" font-weight="700">100% (Completed)</text>
+
+    <!-- Arrays -->
+    <text x="0" y="60" fill="#f8fafc" font-weight="600">🔢 Arrays</text>
+    <rect x="150" y="46" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="150" y="46" width="154" height="18" rx="9" fill="url(#barBlue)"/>
+    <text x="380" y="60" fill="#00f0ff" font-weight="700">70% (In Progress)</text>
+
+    <!-- Strings -->
+    <text x="0" y="100" fill="#f8fafc" font-weight="600">🔤 Strings</text>
+    <rect x="150" y="86" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="150" y="86" width="154" height="18" rx="9" fill="url(#barBlue)"/>
+    <text x="380" y="100" fill="#00f0ff" font-weight="700">70% (In Progress)</text>
+
+    <!-- Linked Lists -->
+    <text x="0" y="140" fill="#f8fafc" font-weight="600">🔗 Linked Lists</text>
+    <rect x="150" y="126" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="150" y="126" width="154" height="18" rx="9" fill="url(#barBlue)"/>
+    <text x="380" y="140" fill="#00f0ff" font-weight="700">70% (In Progress)</text>
+
+    <!-- Stacks & Queues -->
+    <text x="0" y="180" fill="#f8fafc" font-weight="600">🥞 Stacks &amp; Queues</text>
+    <rect x="150" y="166" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="150" y="166" width="154" height="18" rx="9" fill="url(#barBlue)"/>
+    <text x="380" y="180" fill="#00f0ff" font-weight="700">70% (In Progress)</text>
+  </g>
+
+  <!-- Column 2 (Topics 6-10) -->
+  <g transform="translate(520, 80)" font-family="'Fira Code', monospace" font-size="13">
+    <!-- Sorting -->
+    <text x="0" y="20" fill="#f8fafc" font-weight="600">📊 Sorting</text>
+    <rect x="140" y="6" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="140" y="6" width="154" height="18" rx="9" fill="url(#barBlue)"/>
+    <text x="370" y="20" fill="#00f0ff" font-weight="700">70% (In Progress)</text>
+
+    <!-- Trees -->
+    <text x="0" y="60" fill="#f8fafc" font-weight="600">🌳 Trees</text>
+    <rect x="140" y="46" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="140" y="46" width="154" height="18" rx="9" fill="url(#barBlue)"/>
+    <text x="370" y="60" fill="#00f0ff" font-weight="700">70% (In Progress)</text>
+
+    <!-- Graphs -->
+    <text x="0" y="100" fill="#f8fafc" font-weight="600">🌐 Graphs</text>
+    <rect x="140" y="86" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="140" y="86" width="110" height="18" rx="9" fill="url(#barOrange)"/>
+    <text x="370" y="100" fill="#ffaa00" font-weight="700">50% (Building)</text>
+
+    <!-- AVL Trees -->
+    <text x="0" y="140" fill="#f8fafc" font-weight="600">🎄 AVL Trees</text>
+    <rect x="140" y="126" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="140" y="126" width="110" height="18" rx="9" fill="url(#barOrange)"/>
+    <text x="370" y="140" fill="#ffaa00" font-weight="700">50% (Building)</text>
+
+    <!-- Recursion -->
+    <text x="0" y="180" fill="#f8fafc" font-weight="600">🔄 Recursion</text>
+    <rect x="140" y="166" width="220" height="18" rx="9" fill="#1e293b"/>
+    <rect x="140" y="166" width="110" height="18" rx="9" fill="url(#barOrange)"/>
+    <text x="370" y="180" fill="#ffaa00" font-weight="700">50% (Building)</text>
+  </g>
+
+  <!-- Bottom CTA Badge -->
+  <g transform="translate(35, 275)">
+    <rect width="930" height="40" rx="10" fill="#141c2e" stroke="#334155" stroke-width="1"/>
+    <text x="465" y="25" fill="#f8fafc" font-family="'Fira Code', monospace" font-size="13" font-weight="600" text-anchor="middle">
+      ⚡ Tracking LeetCode Solutions: <tspan fill="#ffaa00">Atharva_Soni-20</tspan> | Repo: <tspan fill="#00f0ff">Atharva-001-cyber/LeetCode_Problem</tspan>
+    </text>
+  </g>
+</svg>
